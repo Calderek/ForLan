@@ -84,6 +84,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DbModel\ForlanDbContext.cs" />
     <Compile Include="Design\DesignDataService.cs" />
     <Compile Include="Entity\DictionaryPlDe.cs" />
     <Compile Include="Entity\DictionaryPlEng.cs" />
@@ -92,6 +93,11 @@
     <Compile Include="Entity\Log.cs" />
     <Compile Include="Entity\PolishWord.cs" />
     <Compile Include="Helper\ApplicationHelper.cs" />
+    <Compile Include="Migrations\201701141414171_EmptyMigrations.cs" />
+    <Compile Include="Migrations\201701141414171_EmptyMigrations.Designer.cs">
+      <DependentUpon>201701141414171_EmptyMigrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
@@ -135,6 +141,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201701141414171_EmptyMigrations.resx">
+      <DependentUpon>201701141414171_EmptyMigrations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -150,7 +159,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DbModel\" />
     <Folder Include="Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
