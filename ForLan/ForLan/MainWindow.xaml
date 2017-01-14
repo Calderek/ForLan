@@ -19,7 +19,13 @@
     </Window.Resources>
 
     <Grid x:Name="LayoutRoot">
+        <StackPanel>
+            <Button Content="Dodaj nowe słowo" Click="Button_Click"/>
+            <Button Content="Zgaduj"/>
+            <Button Content="Statystyki"/>
+            <Button Content="O aplikacji"/>
 
-
+        </StackPanel>
+        
     </Grid>
 </Window>
