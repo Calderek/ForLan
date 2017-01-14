@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace ForLan.Entity
 {
-    public class Log
+    public class EnglishWord
     {
-        public int LogID { get; set; }
-        public string Message { get; set; }
-        public DateTime onCreated { get; set; }
     }
 }

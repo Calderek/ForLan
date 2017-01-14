@@ -76,7 +76,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Design\DesignDataService.cs" />
+    <Compile Include="Entity\DictionaryPlDe.cs" />
+    <Compile Include="Entity\DictionaryPlEng.cs" />
+    <Compile Include="Entity\EnglishWord.cs" />
+    <Compile Include="Entity\GermanWord.cs" />
     <Compile Include="Entity\Log.cs" />
+    <Compile Include="Entity\PolishWord.cs" />
     <Compile Include="Helper\ApplicationHelper.cs" />
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
@@ -135,7 +140,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DbModel\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
