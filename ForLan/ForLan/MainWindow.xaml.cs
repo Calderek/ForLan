@@ -16,5 +16,12 @@ namespace ForLan
             InitializeComponent();
             Closing += (s, e) => ViewModelLocator.Cleanup();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window w = new View.WordInputWindow();
+            w.Show();
+            
+        }
     }
 }

@@ -11,8 +11,10 @@
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
+using GalaSoft.MvvmLight.Views;
 using Microsoft.Practices.ServiceLocation;
 using ForLan.Model;
+using System.Windows.Navigation;
 
 namespace ForLan.ViewModel
 {
@@ -28,6 +30,8 @@ namespace ForLan.ViewModel
         static ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+
+
 
             if (ViewModelBase.IsInDesignModeStatic)
             {
