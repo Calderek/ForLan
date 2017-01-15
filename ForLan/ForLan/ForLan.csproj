@@ -97,6 +97,14 @@
     <Compile Include="Migrations\201701141414171_EmptyMigrations.Designer.cs">
       <DependentUpon>201701141414171_EmptyMigrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701151714058_LogMigrations.cs" />
+    <Compile Include="Migrations\201701151714058_LogMigrations.Designer.cs">
+      <DependentUpon>201701151714058_LogMigrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701152317286_AddWordAndDictionartMigrations.cs" />
+    <Compile Include="Migrations\201701152317286_AddWordAndDictionartMigrations.Designer.cs">
+      <DependentUpon>201701152317286_AddWordAndDictionartMigrations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
@@ -143,6 +151,12 @@
     </Compile>
     <EmbeddedResource Include="Migrations\201701141414171_EmptyMigrations.resx">
       <DependentUpon>201701141414171_EmptyMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701151714058_LogMigrations.resx">
+      <DependentUpon>201701151714058_LogMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701152317286_AddWordAndDictionartMigrations.resx">
+      <DependentUpon>201701152317286_AddWordAndDictionartMigrations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

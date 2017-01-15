@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ForLan.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,6 +14,14 @@ namespace ForLan.DbModel
         {
 
         }
+
+        public DbSet<Log> Log{ get; set; }
+        public DbSet<PolishWord> PolishWord { get; set; }
+        public DbSet<EnglishWord> EnglishWord { get; set; }
+        public DbSet<GermanWord> GermanWord { get; set; }
+        public DbSet<DictionaryPlDe> DictionaryPolishGerman { get; set; }
+        public DbSet<DictionaryPlEng> DictionaryPolishEnglish { get; set; }
+
 
 
     }
