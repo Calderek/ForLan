@@ -105,6 +105,10 @@
     <Compile Include="Migrations\201701152317286_AddWordAndDictionartMigrations.Designer.cs">
       <DependentUpon>201701152317286_AddWordAndDictionartMigrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701162316226_ChangeNameForeignKeyInDictionaryMigrations.cs" />
+    <Compile Include="Migrations\201701162316226_ChangeNameForeignKeyInDictionaryMigrations.Designer.cs">
+      <DependentUpon>201701162316226_ChangeNameForeignKeyInDictionaryMigrations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
@@ -159,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701152317286_AddWordAndDictionartMigrations.resx">
       <DependentUpon>201701152317286_AddWordAndDictionartMigrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701162316226_ChangeNameForeignKeyInDictionaryMigrations.resx">
+      <DependentUpon>201701162316226_ChangeNameForeignKeyInDictionaryMigrations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
