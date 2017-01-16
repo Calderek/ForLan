@@ -5,14 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ForLan.View"
         mc:Ignorable="d"
-        Title="WordInputWindow" Height="300" Width="300">
+        Title="WordInputWindow" Height="300" Width="300"
+        DataContext="{Binding WordInput, Source={StaticResource Locator}}">
     <Grid Background="#aeaeae">
         <StackPanel Margin="50">
             <TextBlock Margin="10,0" Text="Polskie" />
             <TextBox Margin="10,0,10,0" Text="{Binding PolishWord, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBlock Margin="10,0" Text="Angielskie"/>
             <TextBox Margin="10,0,10,0" Text="{Binding ForeignhWord, UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Margin="40,10,40,0" Content="Dodaj"/>
+            <Button Margin="40,10,40,0" Content="Dodaj" Command="{Binding SaveWordCommand}"/>
         </StackPanel>
     </Grid>
 </Window>

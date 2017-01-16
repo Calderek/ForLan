@@ -112,6 +112,7 @@
     <Compile Include="Repository\EnglishDictionaryRepository.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="ViewModel\WordInputViewModel.cs" />
     <Compile Include="View\WordInputWindow.xaml.cs">
       <DependentUpon>WordInputWindow.xaml</DependentUpon>
     </Compile>

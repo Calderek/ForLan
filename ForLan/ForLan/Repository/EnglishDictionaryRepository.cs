@@ -19,7 +19,7 @@ namespace ForLan.Repository
                 db.EnglishWord.Add(wordEnglish);
 
                 //todo check whether this word is avaible in database
-                PolishWord wordPolish = new PolishWord() { Word = englishWord };
+                PolishWord wordPolish = new PolishWord() { Word = polishWord };
                 db.PolishWord.Add(wordPolish);
 
                 DictionaryPlEng dictionary = new DictionaryPlEng();
