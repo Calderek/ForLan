@@ -1,14 +1,10 @@
 ﻿using ForLan.DbModel;
 using ForLan.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ForLan.Repository.Abstract;
 
 namespace ForLan.Repository
 {
-    public class EnglishDictionaryRepository
+    public class EnglishDictionaryRepository:IDictionaryRepository
     {
         public void Add(string polishWord, string englishWord)
         {
