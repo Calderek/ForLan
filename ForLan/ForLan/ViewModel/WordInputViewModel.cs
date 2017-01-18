@@ -22,13 +22,18 @@ namespace ForLan.ViewModel
         }
 
         public string PolishWord { get; set; }
-        public string ForeignhWord { get; set; }
+        public string ForeignWord { get; set; }
         public RelayCommand SaveWordCommand{ get; set; }
 
         private void SaveWord()
         {
             EnglishDictionaryRepository repo = new EnglishDictionaryRepository();
-            repo.Add(PolishWord, ForeignhWord);
+            repo.Add(PolishWord, ForeignWord);
+            PolishWord = " ";
+            RaisePropertyChanged(nameof(PolishWord));
+            ForeignWord = " ";
+            RaisePropertyChanged(nameof(ForeignWord));
+
         }
     }
 }
