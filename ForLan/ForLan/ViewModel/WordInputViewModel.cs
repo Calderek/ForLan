@@ -23,6 +23,7 @@ namespace ForLan.ViewModel
 
         public string PolishWord { get; set; }
         public string ForeignWord { get; set; }
+        public string Message { get; set; }
         public RelayCommand SaveWordCommand{ get; set; }
 
         private void SaveWord()
@@ -33,6 +34,8 @@ namespace ForLan.ViewModel
             RaisePropertyChanged(nameof(PolishWord));
             ForeignWord = " ";
             RaisePropertyChanged(nameof(ForeignWord));
+            Message = "Udało się wprowadzić słowa";
+            RaisePropertyChanged(nameof(Message));
 
         }
     }

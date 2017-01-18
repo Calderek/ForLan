@@ -8,7 +8,8 @@
         Title="WordInputWindow" Height="300" Width="300"
         DataContext="{Binding WordInput, Source={StaticResource Locator}}">
     <Grid Background="#aeaeae">
-        <StackPanel Margin="50">
+        <StackPanel Margin="50,10">
+            <TextBlock Margin="0,30" Text="{Binding Message}"/>
             <TextBlock Margin="10,0" Text="Polskie" />
             <TextBox Margin="10,0,10,0" Text="{Binding PolishWord, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBlock Margin="10,0" Text="Angielskie"/>
