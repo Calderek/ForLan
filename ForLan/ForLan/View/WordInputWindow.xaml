@@ -13,7 +13,7 @@
             <TextBlock Margin="10,0" Text="Polskie" />
             <TextBox Margin="10,0,10,0" Text="{Binding PolishWord, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBlock Margin="10,0" Text="Angielskie"/>
-            <TextBox Margin="10,0,10,0" Text="{Binding ForeignhWord, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Margin="10,0,10,0" Text="{Binding ForeignWord, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Margin="40,10,40,0" Content="Dodaj" Command="{Binding SaveWordCommand}"/>
         </StackPanel>
     </Grid>
