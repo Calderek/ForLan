@@ -114,7 +114,9 @@
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
     <Compile Include="Repository\Abstract\IDictionaryRepository.cs" />
+    <Compile Include="Repository\Abstract\IWordRepository.cs" />
     <Compile Include="Repository\EnglishDictionaryRepository.cs" />
+    <Compile Include="Repository\EnglishWordRepository.cs" />
     <Compile Include="Repository\GermanDictionaryRepository.cs" />
     <Compile Include="ViewModel\LearningViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />

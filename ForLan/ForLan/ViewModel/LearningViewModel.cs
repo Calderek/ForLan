@@ -15,6 +15,8 @@ namespace ForLan.ViewModel
         /// </summary>
         public LearningViewModel()
         {
+            
+
         }
 
         public string DrewWord { get; set; }
