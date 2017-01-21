@@ -9,7 +9,11 @@ namespace ForLan.Helper
     public static class ApplicationHelper
     {
 
-        public static string ApplicationName { get; set; } = "Forlan";
+        public static string NameApplication { get; set; } = "Forlan";
+
+        public static string VersionApplication { get; set; } = "1.0";
+
+        public static string AuthorApplication { get; set; } = "Michał Bartkiewicz";
 
     }
 }

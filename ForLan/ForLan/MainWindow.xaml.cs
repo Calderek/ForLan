@@ -23,5 +23,11 @@ namespace ForLan
             w.Show();
             
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window w = new View.LearningView();
+            w.Show();
+        }
     }
 }

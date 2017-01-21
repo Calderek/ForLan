@@ -116,9 +116,13 @@
     <Compile Include="Repository\Abstract\IDictionaryRepository.cs" />
     <Compile Include="Repository\EnglishDictionaryRepository.cs" />
     <Compile Include="Repository\GermanDictionaryRepository.cs" />
+    <Compile Include="ViewModel\LearningViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="ViewModel\WordInputViewModel.cs" />
+    <Compile Include="View\LearningView.xaml.cs">
+      <DependentUpon>LearningView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\WordInputWindow.xaml.cs">
       <DependentUpon>WordInputWindow.xaml</DependentUpon>
     </Compile>
@@ -137,6 +141,10 @@
     <Page Include="Skins\MainSkin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\LearningView.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\WordInputWindow.xaml">
       <SubType>Designer</SubType>

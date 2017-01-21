@@ -44,6 +44,7 @@ namespace ForLan.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<WordInputViewModel>();
+            SimpleIoc.Default.Register<LearningViewModel>();
         }
 
         /// <summary>
@@ -68,7 +69,13 @@ namespace ForLan.ViewModel
             }
         }
 
-
+        public LearningViewModel Learning
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LearningViewModel>();
+            }
+        }
 
         /// <summary>
         /// Cleans up all the resources.
