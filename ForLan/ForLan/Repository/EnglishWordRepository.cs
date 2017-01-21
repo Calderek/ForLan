@@ -10,6 +10,9 @@ namespace ForLan.Repository
 {
     public class EnglishWordRepository : IWordRepository
     {
+
+
+        //todo unit test
         public bool Check(string word)
         {
             using (var db= new ForlanDbContext())
@@ -18,6 +21,8 @@ namespace ForLan.Repository
             }
         }
 
+
+        //todo unit test
         public int Count()
         {
             using (var db = new ForlanDbContext())

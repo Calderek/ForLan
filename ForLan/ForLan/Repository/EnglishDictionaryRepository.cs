@@ -6,6 +6,8 @@ namespace ForLan.Repository
 {
     public class EnglishDictionaryRepository:IDictionaryRepository
     {
+
+        //todo unit test
         public void Add(string polishWord, string englishWord)
         {
             using (var db= new ForlanDbContext())
