@@ -9,6 +9,6 @@ namespace ForLan.Repository.Abstract
     interface IWordRepository
     {
         bool Check(string word);
-        
+        int Count();
     }
 }

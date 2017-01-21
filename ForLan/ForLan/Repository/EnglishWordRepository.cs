@@ -17,5 +17,13 @@ namespace ForLan.Repository
                 return db.EnglishWord.Any(w => w.Word == word);
             }
         }
+
+        public int Count()
+        {
+            using (var db = new ForlanDbContext())
+            {
+                return db.EnglishWord.Count();
+            }
+        }
     }
 }
