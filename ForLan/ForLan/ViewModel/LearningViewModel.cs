@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 namespace ForLan.ViewModel
 {
@@ -15,12 +16,32 @@ namespace ForLan.ViewModel
         /// </summary>
         public LearningViewModel()
         {
-            
-
+            DrewWord = GenereteWord();
+            CheckCommand = new RelayCommand(NextWord);
         }
+
+        public RelayCommand CheckCommand { get; set; }
 
         public string DrewWord { get; set; }
         public string AnserwedWord { get; set; }
+
+
+        public string GenereteWord()
+        {
+
+
+
+
+            return "notImplemented";
+
+        }
+
+        void NextWord()
+        {
+            DrewWord = GenereteWord() + "aaaaa";
+            RaisePropertyChanged(nameof(DrewWord))
+        }
+
 
     }
 }

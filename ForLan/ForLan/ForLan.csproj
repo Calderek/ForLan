@@ -119,6 +119,7 @@
     <Compile Include="Repository\EnglishDictionaryRepository.cs" />
     <Compile Include="Repository\EnglishWordRepository.cs" />
     <Compile Include="Repository\GermanDictionaryRepository.cs" />
+    <Compile Include="Repository\PolishWordRepository.cs" />
     <Compile Include="ViewModel\LearningViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />

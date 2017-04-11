@@ -13,7 +13,7 @@ namespace ForLan.Repository
         {
             using (var db= new ForlanDbContext())
             {
-                //todo check whether this word is avaible in database
+
                 EnglishWord wordEnglish = new EnglishWord() { Word = englishWord };
                 db.EnglishWord.Add(wordEnglish);
 

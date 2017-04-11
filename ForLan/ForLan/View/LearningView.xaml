@@ -12,6 +12,7 @@
             <TextBlock Text="{Binding DrewWord}"/>
             <TextBlock Margin="0,20"  Text="Odpowiedz:"/>
             <TextBox Text="{Binding AnserwedWord}"/>
+            <Button Content="Sprawdź" Command="{Binding CheckCommand}"/>
         </StackPanel>
     </Grid>
 </Window>
