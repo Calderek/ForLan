@@ -1,4 +1,6 @@
-﻿using GalaSoft.MvvmLight;
+﻿using ForLan.Model;
+using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 
 namespace ForLan.ViewModel
 {
@@ -15,12 +17,22 @@ namespace ForLan.ViewModel
         /// </summary>
         public LearningViewModel()
         {
-            
+            NextWordCommand = new RelayCommand(Generate);
 
         }
 
         public string DrewWord { get; set; }
         public string AnserwedWord { get; set; }
+        public RelayCommand NextWordCommand { get; set; }
+
+
+        public void Generate()
+        {
+            LotteryWord generator = new LotteryWord();
+            var englishWord= generator.Random();
+            DrewWord = englishWord;
+            RaisePropertyChanged(nameof(DrewWord));
+        }
 
     }
 }

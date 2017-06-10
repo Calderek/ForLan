@@ -1,4 +1,5 @@
 ﻿using ForLan.DbModel;
+using ForLan.Entity;
 using ForLan.Repository.Abstract;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace ForLan.Repository
 
 
         //todo unit test
+        //todo change to property
         public int Count()
         {
             using (var db = new ForlanDbContext())
@@ -30,5 +32,18 @@ namespace ForLan.Repository
                 return db.EnglishWord.Count();
             }
         }
+
+        //todo unit test
+        //
+        public IEnumerable<PolishWord> All()
+        {
+            using (var db = new ForlanDbContext())
+            {
+                IQueryable<PolishWord> words = db.PolishWord;
+                return words.ToList<PolishWord>();
+            }
+        }
+
+
     }
 }

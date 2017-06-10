@@ -20,6 +20,7 @@
 
     <Grid x:Name="LayoutRoot">
         <StackPanel Margin="30">
+            <TextBlock Text="Forlan" FontFamily="Harrington" HorizontalAlignment="Center" FontSize="20"/>
             <Button Content="Dodaj nowe słowo" Click="Button_Click"/>
             <Button Content="Zgaduj" Click="Button_Click_1"/>
             <Button Content="Statystyki"/>

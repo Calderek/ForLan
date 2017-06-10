@@ -13,6 +13,7 @@ namespace ForLan.Repository
             using (var db= new ForlanDbContext())
             {
                 //todo check whether this word is avaible in database
+                System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
                 EnglishWord wordEnglish = new EnglishWord() { Word = englishWord };
                 db.EnglishWord.Add(wordEnglish);
 

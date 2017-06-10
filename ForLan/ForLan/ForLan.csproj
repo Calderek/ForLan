@@ -113,6 +113,7 @@
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
+    <Compile Include="Model\LotteryWord.cs" />
     <Compile Include="Repository\Abstract\IDictionaryRepository.cs" />
     <Compile Include="Repository\Abstract\IWordRepository.cs" />
     <Compile Include="Repository\EnglishDictionaryRepository.cs" />
