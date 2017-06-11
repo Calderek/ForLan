@@ -28,6 +28,7 @@ namespace ForLan.ViewModel
         public string AnserwedWord { get; set; }
         public RelayCommand NextWordCommand { get; set; }
         public RelayCommand CheckWordCommand { get; set; }
+        public int Score { get; set; } = 0;
 
 
         public void Generate()
@@ -43,11 +44,14 @@ namespace ForLan.ViewModel
             EnglishDictionaryRepository repo = new EnglishDictionaryRepository();
             if (repo.Check(DrewWord,AnserwedWord))
             {
-                DrewWord = "tak";
+                Score++;
+                RaisePropertyChanged(nameof(Score));
             }
             else
             {
-                DrewWord = "nie";
+                Score--;
+                RaisePropertyChanged(nameof(Score));
+
             }
         }
 
