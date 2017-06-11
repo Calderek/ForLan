@@ -1,6 +1,7 @@
 ﻿using ForLan.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using static ForLan.Helper.LanguageHelper;
 
 namespace ForLan.ViewModel
 {
@@ -29,8 +30,8 @@ namespace ForLan.ViewModel
         public void Generate()
         {
             LotteryWord generator = new LotteryWord();
-            var englishWord= generator.Random();
-            DrewWord = englishWord;
+            var generatedWord= generator.Random(LanguageEnum.Polish);
+            DrewWord = generatedWord;
             RaisePropertyChanged(nameof(DrewWord));
         }
 

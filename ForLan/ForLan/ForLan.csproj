@@ -94,6 +94,7 @@
     <Compile Include="Entity\PolishWord.cs" />
     <Compile Include="Helper\ApplicationHelper.cs" />
     <Compile Include="Helper\DictionaryHelper.cs" />
+    <Compile Include="Helper\LanguageHelper.cs" />
     <Compile Include="Migrations\201701141414171_EmptyMigrations.cs" />
     <Compile Include="Migrations\201701141414171_EmptyMigrations.Designer.cs">
       <DependentUpon>201701141414171_EmptyMigrations.cs</DependentUpon>

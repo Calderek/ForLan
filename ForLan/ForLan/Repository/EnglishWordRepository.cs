@@ -35,12 +35,12 @@ namespace ForLan.Repository
 
         //todo unit test
         //
-        public IEnumerable<PolishWord> All()
+        public IEnumerable<EnglishWord> All()
         {
             using (var db = new ForlanDbContext())
             {
-                IQueryable<PolishWord> words = db.PolishWord;
-                return words.ToList<PolishWord>();
+                IQueryable<EnglishWord> words = db.EnglishWord;
+                return words.ToList<EnglishWord>();
             }
         }
 
