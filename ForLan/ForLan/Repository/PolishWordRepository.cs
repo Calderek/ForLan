@@ -41,5 +41,14 @@ namespace ForLan.Repository
                 return words.ToList<PolishWord>();
             }
         }
+
+        public PolishWord Get(string word)
+        {
+            using (var db = new ForlanDbContext())
+            {
+                IQueryable<PolishWord> words = db.PolishWord;
+                return words.Where(w=> w.Word==word).ToList<PolishWord>().FirstOrDefault();
+            }
+        }
     }
 }

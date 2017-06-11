@@ -13,6 +13,7 @@
             <TextBlock Margin="0,20"  Text="Odpowiedz:"/>
             <TextBox Text="{Binding AnserwedWord}"/>
             <Button Command="{Binding NextWordCommand}" Content="Nastepne"/>
+            <Button Command="{Binding CheckWordCommand}" Content="Ok"/>
         </StackPanel>
     </Grid>
 </Window>

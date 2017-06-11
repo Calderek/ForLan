@@ -2,6 +2,7 @@
 using ForLan.Entity;
 using ForLan.Helper;
 using ForLan.Repository.Abstract;
+using System.Linq;
 
 namespace ForLan.Repository
 {
@@ -85,6 +86,37 @@ namespace ForLan.Repository
                 
 
             }
+        }
+
+        public bool Check(string polishWord, string englishWord)
+        {
+            PolishWordRepository polishRepo = new PolishWordRepository();
+            EnglishWordRepository englishRepo = new EnglishWordRepository();
+            PolishWord plWord = polishRepo.Get(polishWord);
+            EnglishWord engWord = englishRepo.Get(englishWord);
+
+            if (plWord == null)
+                return false;
+            if (engWord == null)
+                return false;
+
+            using (var db = new ForlanDbContext())
+            {
+
+
+                var x = db.DictionaryPolishEnglish.Where(d=>d.PolishWordId==plWord.WordID).Where(d=> d.EnglishWordId==engWord.WordID);
+                //var xx = x.ToList();
+                if (x.Count() > 0)
+                    return true;
+                else
+                    return false;
+
+                
+
+            }
+
+
+
         }
 
 

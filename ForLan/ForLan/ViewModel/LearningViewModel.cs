@@ -1,4 +1,5 @@
 ﻿using ForLan.Model;
+using ForLan.Repository;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using static ForLan.Helper.LanguageHelper;
@@ -19,12 +20,14 @@ namespace ForLan.ViewModel
         public LearningViewModel()
         {
             NextWordCommand = new RelayCommand(Generate);
+            CheckWordCommand = new RelayCommand(Check);
 
         }
 
         public string DrewWord { get; set; }
         public string AnserwedWord { get; set; }
         public RelayCommand NextWordCommand { get; set; }
+        public RelayCommand CheckWordCommand { get; set; }
 
 
         public void Generate()
@@ -33,6 +36,19 @@ namespace ForLan.ViewModel
             var generatedWord= generator.Random(LanguageEnum.Polish);
             DrewWord = generatedWord;
             RaisePropertyChanged(nameof(DrewWord));
+        }
+
+        public void Check()
+        {
+            EnglishDictionaryRepository repo = new EnglishDictionaryRepository();
+            if (repo.Check(DrewWord,AnserwedWord))
+            {
+                DrewWord = "tak";
+            }
+            else
+            {
+                DrewWord = "nie";
+            }
         }
 
     }

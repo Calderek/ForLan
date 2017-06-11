@@ -44,6 +44,15 @@ namespace ForLan.Repository
             }
         }
 
+        public EnglishWord Get(string word)
+        {
+            using (var db = new ForlanDbContext())
+            {
+                IQueryable<EnglishWord> words = db.EnglishWord;
+                return words.Where(w => w.Word == word).ToList<EnglishWord>().FirstOrDefault();
+            }
+        }
+
 
     }
 }
